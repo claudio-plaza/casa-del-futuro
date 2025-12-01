@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista de Tareas Avanzada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      width: 320px;
+    }
+
+    li {
+      background: #fff;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 5px #ccc;
+      transition: background 0.3s;
+    }
+
+    li.completada {
+      background: #d4edda;
+      text-decoration: line-through;
+      color: #666;
+    }
+
+    li button {
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    li button:hover {
+      background: #c0392b;
+    }
+
+    #limpiarTodo {
+      background: #555;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    #limpiarTodo:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Tareas Avanzada</h1>
+  <input type="text" id="nuevaTarea" placeholder="Escribe una tarea..." />
+  <button id="agregarBtn">Agregar</button>
+  <ul id="listaTareas"></ul>
+  <button id="limpiarTodo">Borrar todas</button>
+
+  <script src="listasdetareasavanzadas.js"></script>
+</body>
+</html>

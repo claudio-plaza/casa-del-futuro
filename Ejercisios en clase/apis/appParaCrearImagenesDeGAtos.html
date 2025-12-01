@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>app para mostrar imagenes de gatos 😺</title>
+  <style>
+    body {
+      background-image: url("/el-ciclo-vital-de-las-tormentas-247271-1_1280.webp");
+      text-align: center;
+      font-family: sans-serif;
+      background: #cac4c4;
+      color: azure;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: black 0px 0px 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: black solid 2px;
+      box-shadow: black 0px 0px 10px rgba(0,0,0,0.2);
+      color: rgb(0, 0, 0);
+      border-radius: 8px;
+      background-color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.5s;
+
+    }
+    button:hover {
+      background-color: #232424;
+      color: white;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐱 Generador de imágenes de gatos</h1>
+  <button id="gatoNuevo">Mostrar un gatito 🐾</button>
+  <div>
+    <img id="GatoAleatorio" src="" alt="Gato aleatorio aparecerá aquí">
+  </div>
+<script src="imgGatos.js"></script>
+</body>
+</html>

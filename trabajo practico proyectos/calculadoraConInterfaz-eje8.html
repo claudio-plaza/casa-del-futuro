@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    .calculadora {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0005;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      font-size: 1.5em;
+      text-align: right;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    button {
+      width: 60px;
+      height: 60px;
+      margin: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculadora">
+    <input type="text" id="pantalla" readonly>
+
+    <div>
+      <button>7</button><button>8</button><button>9</button><button>/</button>
+    </div>
+    <div>
+      <button>4</button><button>5</button><button>6</button><button>*</button>
+    </div>
+    <div>
+      <button>1</button><button>2</button><button>3</button><button>-</button>
+    </div>
+    <div>
+      <button>0</button><button>.</button><button>=</button><button>+</button>
+      <button>Del</button>
+
+    </div>
+  </div>
+
+  <script src="calculadoraGrafica.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronómetro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #0ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 { font-size: 4em; margin-bottom: 20px; }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cronometro">00:00:00</h1>
+    <div>
+        <button id="iniciar">▶️ Iniciar</button>
+        <button id="pausar">⏸️ Pausar</button>
+        <button id="reiniciar">🔄 Reiniciar</button>
+    </div>
+
+    <script src="eje11.js"></script>
+
+</body>
+</html>

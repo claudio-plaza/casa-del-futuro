@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biblioteca Virtual - POO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Biblioteca Virtual</h1>
+    <div class="row">
+      <input id="book-title" placeholder="Título del libro" />
+      <input id="book-author" placeholder="Autor" />
+      <input id="book-year" placeholder="Año" type="number" />
+      <input id="book-copies" placeholder="Copias" type="number" value="1" min="1" />
+      <button id="add-book">Agregar Libro</button>
+    </div>
+
+    <section id="library-list" class="library-list"></section>
+
+    <footer class="footer">
+      <button id="save-btn" class="btn-ghost">Guardar Biblioteca</button>
+      <small>Los datos se guardan en localStorage</small>
+    </footer>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

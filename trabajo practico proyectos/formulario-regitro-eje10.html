@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #0003;
+            width: 300px;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 1em;
+            border-radius: 50px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <form id="registroForm">
+        <h2>Registro</h2>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button type="submit">Registrarse</button>
+        <p id="mensaje" class="error"></p>
+    </form>
+
+    <script src="formulario-de-registro-eje10.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gestor de Tareas - Modular</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Gestor de Tareas</h1>
+      <div class="input-row">
+        <input id="task-input" placeholder="Escribir nueva tarea..." />
+        <button id="add-btn">Agregar</button>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+      <footer class="footer">
+        <button id="clear-btn" class="btn-ghost">Borrar todas</button>
+        <small>Guardado en localStorage</small>
+      </footer>
+    </main>
+
+    <!-- Cargar script principal como módulo -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

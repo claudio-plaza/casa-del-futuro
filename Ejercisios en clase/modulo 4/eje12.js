@@ -1,0 +1,28 @@
+const apiKey = "a27cb8ecf6ce17664b7fa267aabb3310"; // 🔑 Regístrate en openweathermap.org
+
+document.getElementById("buscar").addEventListener("click", async () => {
+  const ciudad = document.getElementById("ciudad").value.trim();
+  if (!ciudad) return alert("Ingrese una ciudad guachon");
+
+  try {
+    const res = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&units=metric&lang=es&appid=${apiKey}`
+    );
+    const data = await res.json();
+
+    if (data.cod !== 200) {
+      document.getElementById("resultado").innerHTML = "❌ Ciudad no encontrada";
+      return;
+    }
+
+    document.getElementById("resultado").innerHTML = `
+      <h2>${data.name}, ${data.sys.country}</h2>
+      <p>🌡 Temp: ${data.main.temp}°C</p>
+      <p>💨 Viento: ${data.wind.speed} km/h</p>
+      <p>☁️ Clima: ${data.weather[0].description}</p>
+    `;
+  } catch (error) {
+    document.getElementById("resultado").innerHTML = "⚠️ Error al conectar con la API";
+  }
+});
+///// api gatos live_d8s5r9pcgnX5z9TGbBfqZo42GSo2e0cI5WhGQLZqfyp6PPn6IxkW8Vdp3e184Aoq
